@@ -10,7 +10,7 @@ namespace IAsyncEnumerableTest.Controllers
         [HttpGet]
         public async IAsyncEnumerable<int> GetNumbersFrom0To1000()
         {
-            for (int i = 0; i < 1000; i++)
+            for (int i = 0; i <= 1000; i++)
             {
                 await Task.Delay(1000);
                 yield return i;
